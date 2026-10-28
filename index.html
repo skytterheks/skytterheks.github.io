@@ -1,12 +1,677 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skytterheks</title>
-</head>
-<body>
-    <h1>Skytterheks</h1>
-    <p>Sitio web y portafolio artístico en construcción.</p>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- EDITAR: TITULO DE PESTAÑA Y DESCRIPCION -->
+    <title>Skytterheks · habitación digital</title>
+    <meta
+      name="description"
+      content="Skytterheks: artista independiente de Tijuana. Obra, procesos y una habitación digital entre lo tierno, lo extraño y lo brujeril."
+    />
+    <link rel="canonical" href="https://skytterheks.com/" />
+    <link rel="stylesheet" href="estilos.css" />
+    <script src="ventanas.js" defer></script>
+  </head>
+  <body>
+    <!--
+  SKYTTERHEKS.COM — MAPA PARA METER GARRITA (≽^•⩊•^≼)
+
+  ESTE ARCHIVO: textos, imágenes de tus obras, botones y redes.
+  ESTILOS.CSS: colores, fuentes, fondo y tamaños.
+  VENTANAS.JS: movimiento, abrir, cerrar, minimizar y formulario.
+  IMAGENES/: fondo, iconos, cursor y las fotos que añadas.
+  LEEME.txt: ejemplos de edición y cómo subir la carpeta completa.
+
+  BUSCA ESTAS PALABRAS (Ctrl+F / Cmd+F en tu editor):
+  EDITAR: DATOS GENERALES        correo de destino y dominio
+  EDITAR: MARCA Y NOMBRE         nombre visible en el escritorio
+  EDITAR: ICONOS Y BOTONES       nombres bajo los iconos
+  EDITAR: INICIO                 ventana de bienvenida
+  EDITAR: PORTAFOLIO             tarjetas de obras
+  EDITAR: PROYECTOS              ficha del proyecto
+  EDITAR: HABILIDADES            técnicas y herramientas
+  EDITAR: SOBRE MI               tu WBU
+  EDITAR: CV                     trayectoria
+  EDITAR: CONTACTO               textos y formulario
+  EDITAR: OBRA DISPONIBLE        catálogo / consultas
+  EDITAR: EXPLORER Y REDES        enlaces y créditos
+
+  Escribe dentro de <p>tu texto</p> o <h2>tu título</h2>.
+  Puedes usar comillas, apóstrofes y saltos de línea normales.
+  Conserva las etiquetas, los id y los atributos data-panel.
+
+  EJEMPLO PARA UNA FOTO:
+  Sustituye TODO <div class="cy-placeholder">...</div> por:
+  <img class="cy-artwork" src="imagenes/mi-obra.jpg" alt="Descripción de mi obra">
+  Guarda la foto en imagenes/ con exactamente ese nombre.
+-->
+
+    <!-- EDITAR: DATOS GENERALES
+     Cambia data-email para el correo al que llegan las consultas.
+     data-domain actualiza las direcciones visibles y la etiqueta canonical.
+     Los textos de correo visibles también se actualizan automáticamente. -->
+    <div
+      id="datos-sitio"
+      hidden
+      data-email="skytterheks@gmail.com"
+      data-domain="skytterheks.com"
+    ></div>
+    <noscript
+      >Este escritorio necesita JavaScript. Contacto:
+      <a href="mailto:skytterheks@gmail.com">skytterheks@gmail.com</a></noscript
+    >
+
+    <div id="skytterheks-room" aria-label="Escritorio artístico de Skytterheks">
+      <div class="cy-browser">
+        <div class="cy-browserbar">
+          <span class="cy-dots" aria-hidden="true">○ ○ ○</span>
+          <div class="cy-address">https://skytterheks.com</div>
+          <span>✦ Portfolio-Modus ✦</span>
+        </div>
+
+        <section class="cy-desktop" aria-label="Escritorio de Skytterheks">
+          <!-- EDITAR: MARCA Y NOMBRE -->
+          <header class="cy-brand">
+            <strong aria-label="SKYTTERHEKS">𐌔𐌊𐌙𐌕𐌕𐌄𐌓𐋅𐌄𐌊𐌔</strong>
+            <span>Wilhelmina Beatrix Uribe · Artisheks · Tijuanawood</span>
+          </header>
+
+          <!-- EDITAR: ICONOS Y BOTONES. Cambia las etiquetas; conserva data-panel. -->
+          <nav class="cy-icons" aria-label="Secciones del portafolio">
+            <button
+              class="cy-icon"
+              type="button"
+              data-panel="portfolio"
+              aria-label="Abrir portafolio"
+              aria-pressed="false"
+            >
+              <span class="cy-icon-glyph">▣</span
+              ><span class="cy-icon-label"
+                ><span aria-hidden="true">(＊๑˘◡˘)</span
+                ><span class="cy-icon-name">PORTFOLIO.folder</span></span
+              >
+            </button>
+            <button
+              class="cy-icon"
+              type="button"
+              data-panel="projects"
+              aria-label="Abrir proyectos"
+              aria-pressed="false"
+            >
+              <span class="cy-icon-glyph">⚙</span
+              ><span class="cy-icon-label"
+                ><span aria-hidden="true">ᕕ (ᐛ) ᕗ</span
+                ><span class="cy-icon-name">PROJEKTE.exe</span></span
+              >
+            </button>
+            <button
+              class="cy-icon"
+              type="button"
+              data-panel="skills"
+              aria-label="Abrir habilidades"
+              aria-pressed="false"
+            >
+              <span class="cy-icon-glyph">⌘</span
+              ><span class="cy-icon-label"
+                ><span aria-hidden="true">ᕙ( ͡° ͜ʖ ͡°)ᕗ</span
+                ><span class="cy-icon-name">FÄHIGKEITEN.sys</span></span
+              >
+            </button>
+            <button
+              class="cy-icon"
+              type="button"
+              data-panel="about"
+              aria-label="Abrir sobre mí"
+              aria-pressed="false"
+            >
+              <span class="cy-icon-glyph">°❀⋆</span
+              ><span class="cy-icon-label"
+                ><span aria-hidden="true">⚝ ᗯᗷᑎ ⚝</span
+                ><span class="cy-icon-name">WBU.txt</span></span
+              >
+            </button>
+            <button
+              class="cy-icon"
+              type="button"
+              data-panel="cv"
+              aria-label="Abrir currículum"
+              aria-pressed="false"
+            >
+              <span class="cy-icon-glyph">CV</span
+              ><span class="cy-icon-label"
+                ><span aria-hidden="true">(⌐▀͡ ̯ʖ▀)</span
+                ><span class="cy-icon-name">LEBENSLAUF.pdf</span></span
+              >
+            </button>
+            <button
+              class="cy-icon"
+              type="button"
+              data-panel="contact"
+              aria-label="Abrir contacto"
+              aria-pressed="false"
+            >
+              <span class="cy-icon-glyph">˖Ი𐑼ֶָ֢</span
+              ><span class="cy-icon-label"
+                ><span aria-hidden="true">꒰ · ◡ · ꒱</span
+                ><span class="cy-icon-name">KONTAKT.mail</span></span
+              >
+            </button>
+          </nav>
+
+          <nav class="cy-extras" aria-label="Más rincones">
+            <button class="cy-action" data-panel="shop">♡ Obra.shop</button
+            ><button class="cy-action" data-panel="explorer">✧ Explorer</button
+            ><button class="cy-action" id="effects" aria-pressed="true">
+              Burbujas: sí
+            </button>
+          </nav>
+          <!-- MOTOR DE VENTANAS: el contenido aparece aquí al abrir un icono. -->
+          <!-- Las ventanas se crean aquí únicamente cuando se abre un icono. -->
+          <div
+            class="cy-window-layer"
+            id="cy-window-layer"
+            aria-live="polite"
+          ></div>
+
+          <nav class="cy-taskbar" aria-label="Navegación persistente">
+            <button
+              class="cy-start"
+              type="button"
+              data-panel="welcome"
+              aria-label="Abrir ventana principal de SKYTTERHEKS"
+            >
+              ✦𐌔𐌊𐌙𐌕𐌕𐌄𐌓𐋅𐌄𐌊𐌔✦
+            </button>
+            <div
+              class="cy-task-list"
+              id="cy-task-list"
+              aria-label="Ventanas abiertas"
+            ></div>
+            <span class="cy-clock" aria-label="Hora local"></span>
+          </nav>
+        </section>
+      </div>
+    </div>
+
+    <!-- ============================================================
+  EDITAR: INICIO
+  Cambia el título y los párrafos. La imagen destacada se coloca en el cuadro PROYECTO DESTACADO.
+  data-title = nombre en la barra superior de la ventana.
+  data-status = frase en el pie de la ventana.
+  Conserva el id del template: conecta con sus botones.
+============================================================ -->
+    <template
+      id="panel-welcome"
+      data-title="ᗯIᒪᒪKOᗰᗰEᑎ"
+      data-task="ᗯIᒪᒪKOᗰᗰEᑎ"
+      data-status="Inicio · identidad profesional y rutas principales"
+    >
+      <div class="cy-welcome">
+        <div>
+          <p class="cy-kicker">BIENVENIDX A MI HABITACIÓN DIGITAL ✧</p>
+          <h2>
+            Creo universos visuales entre lo tierno, lo extraño, lo fronterizo y
+            lo brujil.
+          </h2>
+          <p>
+            Soy Wilhelmina Beatrix Uribe, también conocida como
+            <strong>Skytterheks</strong>. Artista independiente de Tijuana:
+            dibujo, experimento con materiales y construyo pequeños universos
+            propios.
+          </p>
+          <p class="cy-manifesto">
+            Mi trabajo es contracultura ritualística y fronteriza; pero este
+            sitio muestra cómo investigo, construyo, resuelvo y termino una
+            pieza. Este código es una ventana a mi cerebro.
+          </p>
+          <div class="cy-actions">
+            <button
+              class="cy-action primary"
+              type="button"
+              data-panel="portfolio"
+            >
+              VER PORTAFOLIO
+            </button>
+            <button class="cy-action" type="button" data-panel="projects">
+              EXPLORAR PROCESOS
+            </button>
+            <button class="cy-action" type="button" data-panel="contact">
+              CONTACTO
+            </button>
+          </div>
+        </div>
+        <div class="cy-placeholder">
+          <span
+            >PROYECTO DESTACADO<br />imagen de alto impacto + título +
+            disciplina</span
+          >
+        </div>
+      </div>
+    </template>
+    <!-- FIN: INICIO -->
+
+    <!-- ============================================================
+  EDITAR: PORTAFOLIO
+  Cada <article class="cy-project"> es una tarjeta. Duplica una tarjeta completa para añadir otra obra.
+  data-title = nombre en la barra superior de la ventana.
+  data-status = frase en el pie de la ventana.
+  Conserva el id del template: conecta con sus botones.
+============================================================ -->
+    <template
+      id="panel-portfolio"
+      data-title="PORTFOLIO.folder"
+      data-task="PORTFOLIO.folder"
+      data-status="Prioridad 1 · selección curada de trabajo"
+    >
+      <p class="cy-kicker">SELECTED WORK_</p>
+      <h2>Portafolio seleccionado</h2>
+      <p>
+        No es todo lo que he hecho: es una selección de mi universo visual,
+        entre imagen, materia y cultura digital.
+      </p>
+      <div class="cy-project-grid">
+        <article class="cy-project">
+          <div class="cy-placeholder"><span>IMAGEN 01</span></div>
+          <h3>Construcción y volumen</h3>
+          <p class="cy-project-meta">
+            Maquetas · geometrización · experimentación material
+          </p>
+        </article>
+        <article class="cy-project">
+          <div class="cy-placeholder"><span>IMAGEN 02</span></div>
+          <h3>Dibujo e imagen</h3>
+          <p class="cy-project-meta">
+            Observación · composición · lenguaje propio
+          </p>
+        </article>
+        <article class="cy-project">
+          <div class="cy-placeholder"><span>IMAGEN 03</span></div>
+          <h3>Identidad y medios digitales</h3>
+          <p class="cy-project-meta">
+            Web · archivo visual · narrativa interactiva
+          </p>
+        </article>
+      </div>
+      <div class="cy-actions">
+        <button class="cy-action primary" type="button" data-panel="projects">
+          ⁀➴PROYECTOS COMPLETOS
+        </button>
+      </div>
+    </template>
+    <!-- FIN: PORTAFOLIO -->
+
+    <!-- ============================================================
+  EDITAR: PROYECTOS
+  Cambia el nombre, proceso y ficha de tu proyecto. Puedes añadir imágenes dentro de esta ventana.
+  data-title = nombre en la barra superior de la ventana.
+  data-status = frase en el pie de la ventana.
+  Conserva el id del template: conecta con sus botones.
+============================================================ -->
+    <template
+      id="panel-projects"
+      data-title="PROJEKTE.exe"
+      data-task="PROJEKTE.exe"
+      data-status="Prioridad 2 · pensamiento, proceso y resultados"
+    >
+      <p class="cy-kicker">CASE STUDY_01</p>
+      <h2>La Concha · memoria fronteriza</h2>
+      <div class="cy-case">
+        <div class="cy-placeholder">
+          <span>PROJEKT-HIGHLIGHT<br />resultado final</span>
+        </div>
+        <div class="cy-case-list">
+          <div class="cy-case-row">
+            <strong>Problema</strong
+            ><span
+              >Traducir una arquitectura emblemática de Tijuana a una maqueta
+              geométrica reconocible.</span
+            >
+          </div>
+          <div class="cy-case-row">
+            <strong>Mi papel</strong
+            ><span
+              >Investigación, simplificación formal, prototipado, construcción y
+              acabado.</span
+            >
+          </div>
+          <div class="cy-case-row">
+            <strong>Proceso</strong
+            ><span
+              >Archivo visual → planos → pruebas de estructura → cartón → pieza
+              final.</span
+            >
+          </div>
+          <div class="cy-case-row">
+            <strong>Herramientas</strong
+            ><span
+              >Dibujo técnico, cartón, modelado manual, composición y
+              documentación.</span
+            >
+          </div>
+          <div class="cy-case-row">
+            <strong>Resultado</strong
+            ><span
+              >Una interpretación material que conserva la memoria personal y
+              urbana del puente.</span
+            >
+          </div>
+        </div>
+      </div>
+      <div class="cy-tags">
+        <span class="cy-tag">investigación</span
+        ><span class="cy-tag">volumen</span
+        ><span class="cy-tag">memoria fronteriza</span
+        ><span class="cy-tag">resolución de problemas</span>
+      </div>
+    </template>
+    <!-- FIN: PROYECTOS -->
+
+    <!-- ============================================================
+  EDITAR: HABILIDADES
+  Cada <li> es una habilidad. Puedes cambiar, añadir o quitar líneas completas.
+  data-title = nombre en la barra superior de la ventana.
+  data-status = frase en el pie de la ventana.
+  Conserva el id del template: conecta con sus botones.
+============================================================ -->
+    <template
+      id="panel-skills"
+      data-title="FÄHIGKEITEN.sys"
+      data-task="FÄHIGKEITEN.sys"
+      data-status="Capacidades · técnicas y formas de trabajo"
+    >
+      <p class="cy-kicker">SYSTEM CAPABILITIES_</p>
+      <h2>Herramientas que puedo poner al servicio de un proyecto</h2>
+      <div class="cy-skill-groups">
+        <section class="cy-skill-group">
+          <h3>Creación visual</h3>
+          <ul>
+            <li>Dibujo y composición</li>
+            <li>Geometrización</li>
+            <li>Color y volumen</li>
+            <li>Experimentación material</li>
+          </ul>
+        </section>
+        <section class="cy-skill-group">
+          <h3>Proceso</h3>
+          <ul>
+            <li>Investigación visual</li>
+            <li>Conceptualización</li>
+            <li>Prototipado</li>
+            <li>Documentación del proceso</li>
+          </ul>
+        </section>
+        <section class="cy-skill-group">
+          <h3>Digital</h3>
+          <ul>
+            <li>Procreate y Photoshop</li>
+            <li>Identidad web</li>
+            <li>Edición y archivo</li>
+            <li>Narrativa interactiva</li>
+          </ul>
+        </section>
+      </div>
+    </template>
+    <!-- FIN: HABILIDADES -->
+
+    <!-- ============================================================
+  EDITAR: SOBRE MI
+  Esta es tu ventana WBU. Cambia los párrafos y sustituye el cuadro RETRATO por tu imagen.
+  data-title = nombre en la barra superior de la ventana.
+  data-status = frase en el pie de la ventana.
+  Conserva el id del template: conecta con sus botones.
+============================================================ -->
+    <template
+      id="panel-about"
+      data-title="⟣𓂃ᗯᗷᑎ‧ ✧ ◞ · ÜBER MICH"
+      data-task="⟣𓂃ᗯᗷᑎ‧ ✧ ◞ · ÜBER MICH"
+      data-status="Identidad · versión profesional sin perder la voz propia"
+    >
+      <div class="cy-about">
+        <div class="cy-placeholder">
+          <span>RETRATO / AUTORRETRATO<br />con marco dorado</span>
+        </div>
+        <div>
+          <p class="cy-kicker">WER STECKT HINTER DEM BILDSCHIRM?_</p>
+          <h2>Wilhelmina Beatrix · Skytterheks</h2>
+          <p>
+            Soy una artisheks tijuanense interesada en la frontera entre
+            memoria, identidad, humor, magia y cultura digital.
+          </p>
+          <p>
+            Combino lo adorable, lo incómodo y lo brujeril para construir
+            imágenes y objetos que se sienten como pequeños mundos propios.
+          </p>
+          <p>
+            Mi formación actual en artes visuales fortalece una práctica que
+            también se alimenta de literatura, investigación, internet y trabajo
+            manual.
+          </p>
+          <p class="cy-manifesto">
+            “Mi obra es mi ritual, mi rebelión y mi hogar.”
+          </p>
+          <div class="cy-actions">
+            <button class="cy-action" type="button" data-panel="cv">
+              VER CV</button
+            ><button
+              class="cy-action primary"
+              type="button"
+              data-panel="contact"
+            >
+              CONTACTAR
+            </button>
+          </div>
+        </div>
+      </div>
+    </template>
+    <!-- FIN: SOBRE MI -->
+
+    <!-- ============================================================
+  EDITAR: CV
+  El botón SOLICITAR CV abre Contacto. Cuando tengas el PDF, usa el ejemplo de descarga de la guía.
+  data-title = nombre en la barra superior de la ventana.
+  data-status = frase en el pie de la ventana.
+  Conserva el id del template: conecta con sus botones.
+============================================================ -->
+    <template
+      id="panel-cv"
+      data-title="CV_Ꮤ𐌁𐌵.pdf"
+      data-task="CV_Ꮤ𐌁𐌵.pdf"
+      data-status="Trayectoria · resumen en construcción"
+    >
+      <div class="cy-cv">
+        <div class="cy-paper-sheet">
+          <p class="cy-kicker">BEATRIZ GUILLERMINA URIBE BARRAZA</p>
+          <h2>Artista visual</h2>
+          <p>Tijuana, Baja California</p>
+          <hr />
+          <p>
+            <strong>Perfil</strong><br />Creación visual, investigación,
+            experimentación material e identidad digital.
+          </p>
+          <p>
+            <strong>Contacto</strong><br />correo · sitio · redes profesionales
+          </p>
+        </div>
+        <div>
+          <div class="cy-cv-list">
+            <div class="cy-cv-row">
+              <strong>Formación</strong><br />ESAV · Artes Visuales · periodo
+            </div>
+            <div class="cy-cv-row">
+              <strong>Proyectos seleccionados</strong><br />Nombre · función ·
+              técnica · año
+            </div>
+            <div class="cy-cv-row">
+              <strong>Habilidades</strong><br />Técnicas, herramientas y formas
+              de trabajo relevantes
+            </div>
+            <div class="cy-cv-row">
+              <strong>Idiomas y datos adicionales</strong><br />Información por
+              completar
+            </div>
+          </div>
+          <div class="cy-actions">
+            <button
+              class="cy-action primary"
+              type="button"
+              data-panel="contact"
+            >
+              SOLICITAR CV</button
+            ><button class="cy-action" type="button" data-panel="contact">
+              SOLICITAR PORTAFOLIO
+            </button>
+          </div>
+        </div>
+      </div>
+    </template>
+    <!-- FIN: CV -->
+
+    <!-- ============================================================
+  EDITAR: CONTACTO
+  El correo de destino se cambia en DATOS GENERALES. Conserva los atributos name del formulario.
+  data-title = nombre en la barra superior de la ventana.
+  data-status = frase en el pie de la ventana.
+  Conserva el id del template: conecta con sus botones.
+============================================================ -->
+    <template
+      id="panel-contact"
+      data-title="KONTAKT.mail"
+      data-task="KONTAKT.mail"
+      data-status="Conversión final · contacto profesional"
+    >
+      <div class="cy-contact">
+        <div>
+          <p class="cy-kicker">NEUE NACHRICHT_</p>
+          <h2>¿Conectaste con mi universo?</h2>
+          <p>
+            Escríbeme para consultar una obra, proponer una exposición o
+            conversar sobre una colaboración compatible.
+          </p>
+          <p>
+            <strong>Correo</strong><br /><a
+              data-email-link
+              href="mailto:skytterheks@gmail.com"
+              >skytterheks@gmail.com</a
+            >
+          </p>
+          <p>
+            <strong>Ubicación</strong><br />Tijuana · trabajo remoto o
+            presencial según el proyecto
+          </p>
+        </div>
+        <form class="cy-form" data-contact-form>
+          <label
+            >Nombre / organización<input
+              name="nombre"
+              type="text"
+              autocomplete="name"
+              required
+          /></label>
+          <label
+            >Correo<input
+              name="correo"
+              type="email"
+              autocomplete="email"
+              required
+          /></label>
+          <label
+            >Motivo<select name="motivo">
+              <option>Consulta de obra</option>
+              <option>Oportunidad profesional</option>
+              <option>Colaboración</option>
+              <option>Encargo</option>
+              <option>Exposición</option>
+            </select></label
+          >
+          <label>Mensaje<textarea name="mensaje" required></textarea></label>
+          <button class="cy-action primary" type="submit">
+            ABRIR MI CORREO
+          </button>
+          <small
+            >Se abrirá tu aplicación de correo con el mensaje preparado. No se
+            envía automáticamente ni se guarda aquí.</small
+          >
+        </form>
+      </div>
+    </template>
+    <!-- FIN: CONTACTO -->
+
+    <!-- ============================================================
+  EDITAR: OBRA DISPONIBLE
+  Puedes añadir aquí fichas de obras reales con técnica, medidas, precio y disponibilidad.
+  data-title = nombre en la barra superior de la ventana.
+  data-status = frase en el pie de la ventana.
+  Conserva el id del template: conecta con sus botones.
+============================================================ -->
+    <template
+      id="panel-shop"
+      data-title="OBRA.shop ♡"
+      data-task="OBRA.shop ♡"
+      data-status="Consultas de obra · sin pagos automáticos"
+    >
+      <p class="cy-kicker">PEQUEÑOS MUNDOS PARA LLEVAR CONTIGO</p>
+      <h2>Obra disponible</h2>
+      <p>
+        El catálogo está en preparación. Consulta por correo disponibilidad,
+        precio, medidas, técnica y opciones de entrega de la pieza que te
+        interesa.
+      </p>
+      <button class="cy-action primary" data-panel="contact">
+        CONSULTAR UNA OBRA
+      </button>
+    </template>
+    <!-- FIN: OBRA DISPONIBLE -->
+
+    <!-- ============================================================
+  EDITAR: EXPLORER Y REDES
+  Cambia las direcciones href de tus redes. Conserva los créditos de los recursos que utilices.
+  data-title = nombre en la barra superior de la ventana.
+  data-status = frase en el pie de la ventana.
+  Conserva el id del template: conecta con sus botones.
+============================================================ -->
+    <template
+      id="panel-explorer"
+      data-title="Explorer · notas de mi habitación"
+      data-task="Explorer · notas de mi habitación"
+      data-status="Ritual, rebelión y hogar"
+    >
+      <h2>Mi trabajo es mi ritual, mi rebelión y mi hogar.</h2>
+      <p>
+        Una habitación digital para lo adorable, lo extraño y lo brujeril.
+        Puedes explorar a tu ritmo.
+      </p>
+      <p>
+        <a
+          href="https://substack.com/@skytterheks"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Leer en Substack ↗</a
+        >
+        ·
+        <a
+          href="https://www.instagram.com/skytterheks/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Instagram ↗</a
+        >
+        ·
+        <a
+          href="https://www.tiktok.com/@skytterheks"
+          target="_blank"
+          rel="noopener noreferrer"
+          >TikTok ↗</a
+        >
+      </p>
+      <p>
+        <small
+          >Inspiración del tema Win98: eathemes. Iconos de cristal: Saccstry.
+          Fondo y cursor conservados del tema proporcionado; verificar sus
+          permisos antes de uso comercial. Burbujas: nueva implementación
+          inspirada en el efecto original de mf2fm.</small
+        >
+      </p>
+    </template>
+    <!-- FIN: EXPLORER Y REDES -->
+  </body>
 </html>
