@@ -1,0 +1,1986 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- EDITAR: TITULO DE PESTAÑA Y DESCRIPCION -->
+    <title>Skytterheks · habitación digital</title>
+    <meta
+      name="description"
+      content="Skytterheks: artista independiente de Tijuana. Obra, procesos y una habitación digital entre lo tierno, lo extraño y lo brujeril."
+    />
+    <link rel="canonical" href="https://skytterheks.com/" />
+  </head>
+  <body>
+    <!--
+SKYTTERHEKS.COM — TU MAPA PARA EDITAR EN GITHUB
+
+TODO el texto, el diseño y el funcionamiento están en este HTML.
+Las imágenes van en la carpeta imagenes/ del repositorio.
+No necesitas editar estilos.css ni ventanas.js para esta versión.
+
+PASOS EN GITHUB:
+1. Abre index.html y toca el lápiz para editar.
+2. Busca una etiqueta de esta lista. Si encuentras primero este mapa,
+   pulsa Siguiente en el buscador para llegar al contenido.
+3. Cambia una cosa. Revisa la pestaña de cambios antes de guardar.
+4. Commit changes guarda una versión. Puedes escribir: Cambio mi WBU.
+5. Tras completarse GitHub Pages, recarga skytterheks.com.
+
+QUÉ BUSCAR:
+EDITAR: MARCA Y NOMBRE   tu nombre del escritorio
+EDITAR: INICIO           bienvenida
+EDITAR: GALERÍA          tarjetas de obras
+EDITAR: SOBRE MI         WBU
+EDITAR: TALLER           técnicas y materiales
+EDITAR: TRAYECTORIA      formación y proyectos
+EDITAR: CONTACTO         contacto
+EDITAR: OBRA DISPONIBLE  consultas de obra
+EDITAR: PALETA           colores
+EDITAR: FONDO            fondo del escritorio
+FOTO INICIO              imagen destacada
+FOTO RETRATO             tu retrato
+
+PARA PONER UNA FOTO:
+Sube mi-foto.jpg dentro de imagenes/ en GitHub.
+En su línea <img> cambia src="" por src="imagenes/mi-foto.jpg".
+Escribe una descripción en alt. Conserva data-foto.
+Para quitarla deja src="". No edites la instrucción: edita el <img>.
+
+PARA CAMBIAR TEXTOS:
+Escribe dentro de <p>tu texto</p> y <h2>tu título</h2>.
+Para añadir una obra copia un bloque <article>...</article> completo
+en la galería. Para quitar esa tarjeta borra el mismo bloque completo.
+Conserva los id, data-panel y etiquetas template: conectan las ventanas.
+
+ESTA COPIA YA TIENE LA CORRECCIÓN DEL ICONO: ancho de 32px.
+El retrato que añadiste en Neocities no está en esta copia.
+Vuelve a poner su nombre en FOTO RETRATO y súbelo a imagenes/.
+Conserva el archivo CNAME de tu repositorio para mantener el dominio.
+Una edición en GitHub no cambia automáticamente tu copia en Neocities.
+-->
+
+
+
+    <!-- EDITAR: DATOS GENERALES
+     Cambia data-email para el correo al que llegan las consultas.
+     data-domain actualiza las direcciones visibles y la etiqueta canonical.
+     Los textos de correo visibles también se actualizan automáticamente. -->
+    <div
+      id="datos-sitio"
+      hidden
+      data-email="skytterheks@gmail.com"
+      data-domain="skytterheks.com"
+    ></div>
+    <noscript
+      >Este escritorio necesita JavaScript. Contacto:
+      <a href="mailto:skytterheks@gmail.com">skytterheks@gmail.com</a></noscript
+    >
+
+    <div id="skytterheks-room" aria-label="Escritorio artístico de Skytterheks">
+      <div class="cy-browser">
+        <div class="cy-browserbar">
+          <span class="cy-dots" aria-hidden="true">○ ○ ○</span>
+          <div class="cy-address">https://skytterheks.com</div>
+          <span>✦ Universo independiente ✦</span>
+        </div>
+
+        <section class="cy-desktop" aria-label="Escritorio de Skytterheks">
+          <!-- EDITAR: MARCA Y NOMBRE -->
+          <header class="cy-brand">
+            <strong aria-label="SKYTTERHEKS">𐌔𐌊𐌙𐌕𐌕𐌄𐌓𐋅𐌄𐌊𐌔</strong>
+            <span>Wilhelmina Beatrix Uribe · Artisheks · Tijuanawood</span>
+          </header>
+
+          <!-- EDITAR: ICONOS Y BOTONES. Cambia las etiquetas; conserva data-panel. -->
+          <nav class="cy-icons" aria-label="Secciones del portafolio">
+            <button
+              class="cy-icon"
+              type="button"
+              data-panel="portfolio"
+              aria-label="Abrir galería"
+              aria-pressed="false"
+            >
+              <span class="cy-icon-glyph">▣</span
+              ><span class="cy-icon-label"
+                ><span aria-hidden="true">(＊๑˘◡˘)</span
+                ><span class="cy-icon-name">GALERIA.folder</span></span
+              >
+            </button>
+            <button
+              class="cy-icon"
+              type="button"
+              data-panel="projects"
+              aria-label="Abrir proyectos"
+              aria-pressed="false"
+            >
+              <span class="cy-icon-glyph">⚙</span
+              ><span class="cy-icon-label"
+                ><span aria-hidden="true">ᕕ (ᐛ) ᕗ</span
+                ><span class="cy-icon-name">PROJEKTE.exe</span></span
+              >
+            </button>
+            <button
+              class="cy-icon"
+              type="button"
+              data-panel="skills"
+              aria-label="Abrir taller"
+              aria-pressed="false"
+            >
+              <span class="cy-icon-glyph">⌘</span
+              ><span class="cy-icon-label"
+                ><span aria-hidden="true">ᕙ( ͡° ͜ʖ ͡°)ᕗ</span
+                ><span class="cy-icon-name">TALLER.sys</span></span
+              >
+            </button>
+            <button
+              class="cy-icon"
+              type="button"
+              data-panel="about"
+              aria-label="Abrir sobre mí"
+              aria-pressed="false"
+            >
+              <span class="cy-icon-glyph">°❀⋆</span
+              ><span class="cy-icon-label"
+                ><span aria-hidden="true">⚝ ᗯᗷᑎ ⚝</span
+                ><span class="cy-icon-name">WBU.txt</span></span
+              >
+            </button>
+            <button
+              class="cy-icon"
+              type="button"
+              data-panel="cv"
+              aria-label="Abrir trayectoria"
+              aria-pressed="false"
+            >
+              <span class="cy-icon-glyph">CV</span
+              ><span class="cy-icon-label"
+                ><span aria-hidden="true">(⌐▀͡ ̯ʖ▀)</span
+                ><span class="cy-icon-name">TRAYECTORIA.txt</span></span
+              >
+            </button>
+            <button
+              class="cy-icon"
+              type="button"
+              data-panel="contact"
+              aria-label="Abrir contacto"
+              aria-pressed="false"
+            >
+              <span class="cy-icon-glyph">˖Ი𐑼ֶָ֢</span
+              ><span class="cy-icon-label"
+                ><span aria-hidden="true">꒰ · ◡ · ꒱</span
+                ><span class="cy-icon-name">KONTAKT.mail</span></span
+              >
+            </button>
+          </nav>
+
+          <nav class="cy-extras" aria-label="Más rincones">
+            <button class="cy-action" data-panel="shop">♡ Obra.shop</button
+            ><button class="cy-action" data-panel="explorer">✧ Explorer</button
+            ><button class="cy-action" id="effects" aria-pressed="true">
+              Burbujas: sí
+            </button>
+          </nav>
+          <!-- MOTOR DE VENTANAS: el contenido aparece aquí al abrir un icono. -->
+          <!-- Las ventanas se crean aquí únicamente cuando se abre un icono. -->
+          <div
+            class="cy-window-layer"
+            id="cy-window-layer"
+            aria-live="polite"
+          ></div>
+
+          <nav class="cy-taskbar" aria-label="Navegación persistente">
+            <button
+              class="cy-start"
+              type="button"
+              data-panel="welcome"
+              aria-label="Abrir ventana principal de SKYTTERHEKS"
+            >
+              ✦𐌔𐌊𐌙𐌕𐌕𐌄𐌓𐋅𐌄𐌊𐌔✦
+            </button>
+            <div
+              class="cy-task-list"
+              id="cy-task-list"
+              aria-label="Ventanas abiertas"
+            ></div>
+            <span class="cy-clock" aria-label="Hora local"></span>
+          </nav>
+        </section>
+      </div>
+    </div>
+
+    <!-- ============================================================
+  EDITAR: INICIO
+  Cambia el título y los párrafos. La imagen destacada se coloca en el cuadro PROYECTO DESTACADO.
+  data-title = nombre en la barra superior de la ventana.
+  data-status = frase en el pie de la ventana.
+  Conserva el id del template: conecta con sus botones.
+============================================================ -->
+    <template
+      id="panel-welcome"
+      data-title="ᗯIᒪᒪKOᗰᗰEᑎ"
+      data-task="ᗯIᒪᒪKOᗰᗰEᑎ"
+      data-status="Obra independiente · universo de Skytterheks"
+    >
+      <div class="cy-welcome">
+        <div>
+          <p class="cy-kicker">BIENVENIDX A MI HABITACIÓN DIGITAL ✧</p>
+          <h2>
+            Creo universos visuales entre lo tierno, lo extraño, lo fronterizo y
+            lo brujil.
+          </h2>
+          <p>
+            Soy Wilhelmina Beatrix Uribe, también conocida como
+            <strong>Skytterheks</strong>. Artisheks independiente de Tijuana:
+            dibujo, experimento con materiales y construyo pequeños universos
+            propios.
+          </p>
+          <p class="cy-manifesto">
+            Mi trabajo es contracultura ritualística y fronteriza. Aquí comparto mis piezas, mis experimentos y los mundos que construyo. Esta habitación digital es una ventana a mi cerebro.
+          </p>
+          <div class="cy-actions">
+            <button
+              class="cy-action primary"
+              type="button"
+              data-panel="portfolio"
+            >
+              EXPLORAR MI OBRA
+            </button>
+            <button class="cy-action" type="button" data-panel="shop">OBRA DISPONIBLE</button>
+            <button class="cy-action" type="button" data-panel="about">CONOCER A LA ARTISHEKS</button>
+          </div>
+        </div>
+        <!-- FOTO INICIO: cambia src="" por src="imagenes/nombre-de-tu-foto.jpg".
+Para quitar la foto deja src="". El cuadro se muestra mientras no haya imagen. -->
+<div class="sk-foto">
+  <img class="cy-artwork" src="" alt="Describe tu imagen aquí" data-foto>
+  <div class="cy-placeholder">
+          <span
+            >PROYECTO DESTACADO<br />imagen de alto impacto + título +
+            disciplina</span
+          >
+        </div>
+</div>
+      </div>
+    </template>
+    <!-- FIN: INICIO -->
+
+    <!-- ============================================================
+  EDITAR: GALERÍA
+  Cada <article class="cy-project"> es una tarjeta. Duplica una tarjeta completa para añadir otra obra.
+  data-title = nombre en la barra superior de la ventana.
+  data-status = frase en el pie de la ventana.
+  Conserva el id del template: conecta con sus botones.
+============================================================ -->
+    <template
+      id="panel-portfolio"
+      data-title="GALERIA.folder"
+      data-task="GALERIA.folder"
+      data-status="Series, objetos e imágenes · galería de obra"
+    >
+      <p class="cy-kicker">SELECTED WORK_</p>
+      <h2>Mi galería de obra</h2>
+      <p>
+        No es todo lo que he hecho: es una selección de mi universo visual,
+        entre imagen, materia y cultura digital.
+      </p>
+      <div class="cy-project-grid">
+        <article class="cy-project">
+          <!-- FOTO OBRA 01: cambia src="" por src="imagenes/nombre-de-tu-foto.jpg".
+Para quitar la foto deja src="". El cuadro se muestra mientras no haya imagen. -->
+<div class="sk-foto">
+  <img class="cy-artwork" src="" alt="Describe tu imagen aquí" data-foto>
+  <div class="cy-placeholder"><span>IMAGEN 01</span></div>
+</div>
+          <h3>Construcción y volumen</h3>
+          <p class="cy-project-meta">
+            Maquetas · geometrización · experimentación material
+          </p>
+        </article>
+        <article class="cy-project">
+          <!-- FOTO OBRA 02: cambia src="" por src="imagenes/nombre-de-tu-foto.jpg".
+Para quitar la foto deja src="". El cuadro se muestra mientras no haya imagen. -->
+<div class="sk-foto">
+  <img class="cy-artwork" src="" alt="Describe tu imagen aquí" data-foto>
+  <div class="cy-placeholder"><span>IMAGEN 02</span></div>
+</div>
+          <h3>Dibujo e imagen</h3>
+          <p class="cy-project-meta">
+            Observación · composición · lenguaje propio
+          </p>
+        </article>
+        <article class="cy-project">
+          <!-- FOTO OBRA 03: cambia src="" por src="imagenes/nombre-de-tu-foto.jpg".
+Para quitar la foto deja src="". El cuadro se muestra mientras no haya imagen. -->
+<div class="sk-foto">
+  <img class="cy-artwork" src="" alt="Describe tu imagen aquí" data-foto>
+  <div class="cy-placeholder"><span>IMAGEN 03</span></div>
+</div>
+          <h3>Identidad y medios digitales</h3>
+          <p class="cy-project-meta">
+            Web · archivo visual · narrativa interactiva
+          </p>
+        </article>
+      </div>
+      <div class="cy-actions">
+        <button class="cy-action primary" type="button" data-panel="projects">
+          VER PROCESOS
+        </button>
+      </div>
+    <div class="cy-actions"><button class="cy-action primary" data-panel="shop">OBRA DISPONIBLE</button><button class="cy-action" data-panel="contact">CONSULTAR UNA PIEZA</button></div>
+</template>
+    <!-- FIN: GALERÍA -->
+
+    <!-- ============================================================
+  EDITAR: PROYECTOS
+  Cambia el nombre, proceso y ficha de tu proyecto. Puedes añadir imágenes dentro de esta ventana.
+  data-title = nombre en la barra superior de la ventana.
+  data-status = frase en el pie de la ventana.
+  Conserva el id del template: conecta con sus botones.
+============================================================ -->
+    <template
+      id="panel-projects"
+      data-title="PROJEKTE.exe"
+      data-task="PROJEKTE.exe"
+      data-status="Del boceto a la materia · procesos de obra"
+    >
+      <p class="cy-kicker">DIARIO DE PROCESO_01</p>
+      <h2>La Concha · memoria fronteriza</h2>
+      <div class="cy-case">
+        <!-- FOTO OBRA 04: cambia src="" por src="imagenes/nombre-de-tu-foto.jpg".
+Para quitar la foto deja src="". El cuadro se muestra mientras no haya imagen. -->
+<div class="sk-foto">
+  <img class="cy-artwork" src="" alt="Describe tu imagen aquí" data-foto>
+  <div class="cy-placeholder">
+          <span>PROJEKT-HIGHLIGHT<br />resultado final</span>
+        </div>
+</div>
+        <div class="cy-case-list">
+          <div class="cy-case-row">
+            <strong>Problema</strong
+            ><span
+              >Traducir una arquitectura emblemática de Tijuana a una maqueta
+              geométrica reconocible.</span
+            >
+          </div>
+          <div class="cy-case-row">
+            <strong>Mi papel</strong
+            ><span
+              >Investigación, simplificación formal, prototipado, construcción y
+              acabado.</span
+            >
+          </div>
+          <div class="cy-case-row">
+            <strong>Proceso</strong
+            ><span
+              >Archivo visual → planos → pruebas de estructura → cartón → pieza
+              final.</span
+            >
+          </div>
+          <div class="cy-case-row">
+            <strong>Herramientas</strong
+            ><span
+              >Dibujo técnico, cartón, modelado manual, composición y
+              documentación.</span
+            >
+          </div>
+          <div class="cy-case-row">
+            <strong>Resultado</strong
+            ><span
+              >Una interpretación material que conserva la memoria personal y
+              urbana del puente.</span
+            >
+          </div>
+        </div>
+      </div>
+      <div class="cy-tags">
+        <span class="cy-tag">investigación</span
+        ><span class="cy-tag">volumen</span
+        ><span class="cy-tag">memoria fronteriza</span
+        ><span class="cy-tag">experimentación</span>
+      </div>
+    </template>
+    <!-- FIN: PROYECTOS -->
+
+    <!-- ============================================================
+  EDITAR: TALLER
+  Cada <li> es una técnica o exploración. Puedes cambiar, añadir o quitar líneas completas.
+  data-title = nombre en la barra superior de la ventana.
+  data-status = frase en el pie de la ventana.
+  Conserva el id del template: conecta con sus botones.
+============================================================ -->
+    <template
+      id="panel-skills"
+      data-title="TALLER.sys"
+      data-task="TALLER.sys"
+      data-status="Mi taller · técnicas y exploraciones"
+    >
+      <p class="cy-kicker">DENTRO DEL TALLER_</p>
+      <h2>Materiales, técnicas y exploraciones</h2>
+      <div class="cy-skill-groups">
+        <section class="cy-skill-group">
+          <h3>Creación visual</h3>
+          <ul>
+            <li>Dibujo y composición</li>
+            <li>Geometrización</li>
+            <li>Color y volumen</li>
+            <li>Experimentación material</li>
+          </ul>
+        </section>
+        <section class="cy-skill-group">
+          <h3>Proceso</h3>
+          <ul>
+            <li>Investigación visual</li>
+            <li>Conceptualización</li>
+            <li>Prototipado</li>
+            <li>Documentación del proceso</li>
+          </ul>
+        </section>
+        <section class="cy-skill-group">
+          <h3>Digital</h3>
+          <ul>
+            <li>Procreate y Photoshop</li>
+            <li>Identidad web</li>
+            <li>Edición y archivo</li>
+            <li>Narrativa interactiva</li>
+          </ul>
+        </section>
+      </div>
+    </template>
+    <!-- FIN: TALLER -->
+
+    <!-- ============================================================
+  EDITAR: SOBRE MI
+  Esta es tu ventana WBU. Cambia los párrafos y sustituye el cuadro RETRATO por tu imagen.
+  data-title = nombre en la barra superior de la ventana.
+  data-status = frase en el pie de la ventana.
+  Conserva el id del template: conecta con sus botones.
+============================================================ -->
+    <template
+      id="panel-about"
+      data-title="⟣𓂃ᗯᗷᑎ‧ ✧ ◞ · ÜBER MICH"
+      data-task="⟣𓂃ᗯᗷᑎ‧ ✧ ◞ · ÜBER MICH"
+      data-status="Artisheks · memoria, magia y frontera"
+    >
+      <div class="cy-about">
+        <!-- FOTO RETRATO: cambia src="" por src="imagenes/nombre-de-tu-foto.jpg".
+Para quitar la foto deja src="". El cuadro se muestra mientras no haya imagen. -->
+<div class="sk-foto">
+  <img class="cy-artwork" src="" alt="Describe tu imagen aquí" data-foto>
+  <div class="cy-placeholder">
+          <span>RETRATO / AUTORRETRATO<br />con marco dorado</span>
+        </div>
+</div>
+        <div>
+          <p class="cy-kicker">WER STECKT HINTER DEM BILDSCHIRM?_</p>
+          <h2>Wilhelmina Beatrix · Skytterheks</h2>
+          <p>
+            Soy una artisheks tijuanense interesada en la frontera entre
+            memoria, identidad, humor, magia y cultura digital.
+          </p>
+          <p>
+            Combino lo adorable, lo incómodo y lo brujeril para construir
+            imágenes y objetos que se sienten como pequeños mundos propios.
+          </p>
+          <p>
+            Mi formación actual en artes visuales fortalece una práctica que
+            también se alimenta de literatura, investigación, internet y trabajo
+            manual.
+          </p>
+          <p class="cy-manifesto">
+            “Mi obra es mi ritual, mi rebelión y mi hogar.”
+          </p>
+          <div class="cy-actions">
+            <button class="cy-action" type="button" data-panel="cv">
+              VER TRAYECTORIA</button
+            ><button
+              class="cy-action primary"
+              type="button"
+              data-panel="contact"
+            >
+              CONTACTAR
+            </button>
+          </div>
+        </div>
+      </div>
+    </template>
+    <!-- FIN: SOBRE MI -->
+
+    <!-- ============================================================
+  EDITAR: TRAYECTORIA
+  Añade aquí tu formación, exposiciones y proyectos reales, sin inventar logros.
+  data-title = nombre en la barra superior de la ventana.
+  data-status = frase en el pie de la ventana.
+  Conserva el id del template: conecta con sus botones.
+============================================================ -->
+    <template id="panel-cv" data-title="TRAYECTORIA.txt" data-task="Trayectoria" data-status="Un camino de creación y aprendizaje">
+  <!-- EDITAR: MI TRAYECTORIA. Añade únicamente experiencias reales. -->
+  <p class="cy-kicker">EL CAMINO DE LA ARTISHEKS_</p>
+  <h2>Una práctica en construcción</h2>
+  <p>Soy Wilhelmina Beatrix Uribe, Skytterheks. Mi práctica independiente reúne dibujo, experimentación material y cultura digital desde Tijuana.</p>
+  <h3>Formación</h3>
+  <p>Artes Visuales · ESAV, Tijuana · desde 2026.</p>
+  <h3>Proyectos y exploraciones</h3>
+  <p>La Concha: una interpretación material de la memoria fronteriza. Skytterheks.com: mi habitación digital y archivo de obra.</p>
+  <!-- Para añadir una exposición: <h3>Exposiciones</h3><p>Año · Nombre · Sede · Ciudad.</p> -->
+  <div class="cy-actions"><button class="cy-action primary" data-panel="portfolio">EXPLORAR MI OBRA</button><button class="cy-action" data-panel="contact">PROPONER UNA EXPOSICIÓN</button></div>
+</template>
+    <!-- FIN: TRAYECTORIA -->
+
+    <!-- ============================================================
+  EDITAR: CONTACTO
+  El correo de destino se cambia en DATOS GENERALES. Conserva los atributos name del formulario.
+  data-title = nombre en la barra superior de la ventana.
+  data-status = frase en el pie de la ventana.
+  Conserva el id del template: conecta con sus botones.
+============================================================ -->
+    <template
+      id="panel-contact"
+      data-title="KONTAKT.mail"
+      data-task="KONTAKT.mail"
+      data-status="Consultas de obra, exposiciones y colaboraciones"
+    >
+      <div class="cy-contact">
+        <div>
+          <p class="cy-kicker">NEUE NACHRICHT_</p>
+          <h2>¿Conectaste con mi universo?</h2>
+          <p>
+            Escríbeme para consultar una obra, proponer una exposición o
+            conversar sobre una colaboración compatible.
+          </p>
+          <p>
+            <strong>Correo</strong><br /><a
+              data-email-link
+              href="mailto:skytterheks@gmail.com"
+              >skytterheks@gmail.com</a
+            >
+          </p>
+          <p>
+            <strong>Ubicación</strong><br />Tijuana, Baja California · consultas por correo
+          </p>
+        </div>
+        <form class="cy-form" data-contact-form>
+          <label
+            >Nombre / organización<input
+              name="nombre"
+              type="text"
+              autocomplete="name"
+              required
+          /></label>
+          <label
+            >Correo<input
+              name="correo"
+              type="email"
+              autocomplete="email"
+              required
+          /></label>
+          <label
+            >Motivo<select name="motivo">
+              <option>Consulta de obra</option>
+              <option>Adquisición de obra</option>
+              <option>Colaboración</option>
+              <option>Consulta de pieza personalizada</option>
+              <option>Exposición</option>
+            </select></label
+          >
+          <label>Mensaje<textarea name="mensaje" required></textarea></label>
+          <button class="cy-action primary" type="submit">
+            ABRIR MI CORREO
+          </button>
+          <small
+            >Se abrirá tu aplicación de correo con el mensaje preparado. No se
+            envía automáticamente ni se guarda aquí.</small
+          >
+        </form>
+      </div>
+    </template>
+    <!-- FIN: CONTACTO -->
+
+    <!-- ============================================================
+  EDITAR: OBRA DISPONIBLE
+  Puedes añadir aquí fichas de obras reales con técnica, medidas, precio y disponibilidad.
+  data-title = nombre en la barra superior de la ventana.
+  data-status = frase en el pie de la ventana.
+  Conserva el id del template: conecta con sus botones.
+============================================================ -->
+    <template
+      id="panel-shop"
+      data-title="OBRA.shop ♡"
+      data-task="OBRA.shop ♡"
+      data-status="Consultas de obra · sin pagos automáticos"
+    >
+      <p class="cy-kicker">PEQUEÑOS MUNDOS PARA LLEVAR CONTIGO</p>
+      <h2>Obra disponible</h2>
+      <p>
+        El catálogo está en preparación. Consulta por correo disponibilidad,
+        precio, medidas, técnica y opciones de entrega de la pieza que te
+        interesa.
+      </p>
+      <button class="cy-action primary" data-panel="contact">
+        CONSULTAR UNA OBRA
+      </button>
+    </template>
+    <!-- FIN: OBRA DISPONIBLE -->
+
+    <!-- ============================================================
+  EDITAR: EXPLORER Y REDES
+  Cambia las direcciones href de tus redes. Conserva los créditos de los recursos que utilices.
+  data-title = nombre en la barra superior de la ventana.
+  data-status = frase en el pie de la ventana.
+  Conserva el id del template: conecta con sus botones.
+============================================================ -->
+    <template
+      id="panel-explorer"
+      data-title="Explorer · notas de mi habitación"
+      data-task="Explorer · notas de mi habitación"
+      data-status="Ritual, rebelión y hogar"
+    >
+      <h2>Mi trabajo es mi ritual, mi rebelión y mi hogar.</h2>
+      <p>
+        Una habitación digital para lo adorable, lo extraño y lo brujeril.
+        Puedes explorar a tu ritmo.
+      </p>
+      <p>
+        <a
+          href="https://substack.com/@skytterheks"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Leer en Substack ↗</a
+        >
+        ·
+        <a
+          href="https://www.instagram.com/skytterheks/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Instagram ↗</a
+        >
+        ·
+        <a
+          href="https://www.tiktok.com/@skytterheks"
+          target="_blank"
+          rel="noopener noreferrer"
+          >TikTok ↗</a
+        >
+      </p>
+      <p>
+        <small
+          >Inspiración del tema Win98: eathemes. Iconos de cristal: Saccstry.
+          Fondo y cursor conservados del tema proporcionado; verificar sus
+          permisos antes de uso comercial. Burbujas: nueva implementación
+          inspirada en el efecto original de mf2fm.</small
+        >
+      </p>
+    </template>
+    <!-- FIN: EXPLORER Y REDES -->
+  <!-- =====================================================
+  COLORES Y DISEÑO: busca EDITAR: PALETA en esta sección.
+===================================================== -->
+<style>
+/* ============================================================
+   EDITAR: PALETA
+   Cambia el código #... de cada color. Este es el único lugar
+   donde se definen los colores principales.
+============================================================ */
+:root {
+  --cy-pink: #f1d5ff; /* Barra de tareas y rosa de interfaz */
+  --cy-pink-dark: #a54e95; /* Botones principales */
+  --cy-blue: #086ca8; /* Fondo si no se carga la imagen */
+  --cy-cyan: #55d9df; /* Acento turquesa */
+  --cy-lime: #c8e86d; /* Acento verde */
+  --cy-orange: #ff9a62; /* Acento naranja */
+  --cy-paper: #fffafd; /* Interior de las ventanas */
+  --cy-ink: #38213f; /* Texto principal */
+  --cy-line: #aa83b1; /* Bordes */
+  --cy-soft: #f5e8ff; /* Paneles claros */
+  --barra-inicio: #e5b4e0; /* Degradado de la barra de título */
+  --barra-centro: #fce6ef;
+  --barra-fin: #e9d6ff;
+  --color-enlaces: #a83a64;
+
+  /* EDITAR: TIPOGRAFIA */
+  --fuente-texto: Verdana, Arial, sans-serif;
+  --fuente-retro: "Courier New", monospace;
+
+  /* EDITAR: FONDO. Coloca la nueva imagen en . */
+  --wallpaper: url("imagenes/fondo.webp");
+  --ajuste-fondo: cover; /* cover llena la pantalla */
+
+  /* EDITAR: CURSOR. Utiliza una imagen pequeña de hasta 32 × 32 px. */
+  --cursor: url("imagenes/cursor.png");
+
+  /* ICONOS DE CRISTAL. Esta imagen es una hoja de iconos completa.
+     Cambiarla por una foto alteraría todos los recortes de iconos. */
+  --sprites: url("imagenes/iconos.png");
+}
+
+/* DISEÑO DEL ESCRITORIO — no hace falta tocarlo para editar textos. */
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  background: var(--cy-soft);
+}
+
+#skytterheks-room {
+  width: 100%;
+  color: var(--cy-ink);
+  font-family: var(--fuente-texto);
+}
+
+#skytterheks-room * {
+  box-sizing: border-box;
+}
+
+#skytterheks-room button,
+#skytterheks-room input,
+#skytterheks-room textarea {
+  font: inherit;
+}
+
+#skytterheks-room .cy-browser {
+  background: #e8e7ef;
+  border: 2px solid #4c3958;
+  overflow: hidden;
+  box-shadow: 8px 8px 0 color-mix(in srgb, var(--cy-pink-dark) 35%, transparent);
+}
+
+#skytterheks-room .cy-browserbar {
+  min-height: 40px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 10px;
+  padding: 7px 10px;
+  background: #dedde5;
+  border-bottom: 2px solid #8a8290;
+  color: #61596a;
+}
+
+#skytterheks-room .cy-dots {
+  letter-spacing: 4px;
+}
+
+#skytterheks-room .cy-address {
+  background: #fff;
+  border: 1px solid #aaa1ae;
+  padding: 5px 10px;
+  text-align: center;
+  color: #4d4750;
+}
+
+#skytterheks-room .cy-desktop {
+  position: relative;
+  min-height: 650px;
+  padding: 18px 18px 52px;
+  overflow: hidden;
+  background:
+    radial-gradient(
+      circle at 12% 22%,
+      var(--cy-orange) 0 12px,
+      transparent 13px
+    ),
+    radial-gradient(circle at 18% 27%, var(--cy-pink) 0 27px, transparent 28px),
+    radial-gradient(circle at 82% 18%, var(--cy-lime) 0 10px, transparent 11px),
+    radial-gradient(circle at 88% 27%, var(--cy-cyan) 0 31px, transparent 32px),
+    radial-gradient(circle at 78% 79%, var(--cy-pink) 0 42px, transparent 43px),
+    radial-gradient(circle at 20% 86%, var(--cy-lime) 0 34px, transparent 35px),
+    linear-gradient(
+      135deg,
+      color-mix(in srgb, var(--cy-blue) 92%, #fff),
+      #034f89
+    );
+}
+
+#skytterheks-room .cy-desktop::before,
+#skytterheks-room .cy-desktop::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  opacity: 0.52;
+}
+
+#skytterheks-room .cy-desktop::before {
+  width: 190px;
+  height: 76px;
+  left: 3%;
+  bottom: 15%;
+  border: 16px solid var(--cy-cyan);
+  border-radius: 50%;
+  transform: rotate(-18deg);
+}
+
+#skytterheks-room .cy-desktop::after {
+  width: 145px;
+  height: 145px;
+  right: 7%;
+  top: 38%;
+  border: 22px dotted var(--cy-orange);
+  border-radius: 50%;
+}
+
+#skytterheks-room .cy-brand {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  max-width: calc(100% - 180px);
+  padding: 8px 12px;
+  background: color-mix(in srgb, var(--cy-paper) 92%, transparent);
+  border: 2px solid var(--cy-pink-dark);
+  box-shadow: 4px 4px 0 color-mix(in srgb, var(--cy-ink) 45%, transparent);
+}
+
+#skytterheks-room .cy-brand strong {
+  display: block;
+  letter-spacing: 0.18em;
+  font-weight: 500;
+}
+
+#skytterheks-room .cy-brand span {
+  color: #6e5578;
+}
+
+#skytterheks-room .cy-icons {
+  position: relative;
+  z-index: 3;
+  display: grid;
+  grid-template-columns: repeat(2, 92px);
+  gap: 14px 12px;
+  width: 196px;
+  margin-top: 20px;
+}
+
+#skytterheks-room .cy-icon {
+  min-height: 104px;
+  padding: 6px 3px;
+  border: 1px solid transparent;
+  background: transparent;
+  color: #fff;
+  text-align: center;
+  text-shadow:
+    1px 1px 0 #174061,
+    -1px -1px 0 #174061;
+  cursor: pointer;
+}
+
+#skytterheks-room .cy-icon:hover,
+#skytterheks-room .cy-icon[aria-pressed="true"] {
+  background: color-mix(in srgb, var(--cy-pink) 38%, transparent);
+  border-color: #fff;
+}
+
+#skytterheks-room .cy-icon-glyph {
+  width: 44px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 6px;
+  border: 2px solid #fff;
+  background: var(--cy-pink);
+  color: var(--cy-ink);
+  box-shadow: 3px 3px 0 #4a3a72;
+  text-shadow: none;
+}
+
+#skytterheks-room .cy-icon[data-panel="portfolio"] .cy-icon-glyph {
+  width: 32px;
+  background: var(--cy-lime);
+}
+
+#skytterheks-room .cy-icon-label {
+  display: block;
+  overflow-wrap: anywhere;
+}
+
+#skytterheks-room .cy-icon-name {
+  display: block;
+  margin-top: 3px;
+  font-family: var(--fuente-retro);
+  font-size: 0.82rem;
+  line-height: 1.15;
+}
+
+#skytterheks-room .cy-window-layer {
+  position: absolute;
+  z-index: 4;
+  inset: 0;
+  pointer-events: none;
+}
+
+#skytterheks-room .cy-window {
+  position: absolute;
+  left: 230px;
+  top: 76px;
+  width: min(920px, calc(100% - 270px));
+  min-width: 520px;
+  min-height: 430px;
+  background: var(--cy-paper);
+  border: 3px solid var(--cy-pink);
+  box-shadow: 8px 8px 0 color-mix(in srgb, var(--cy-ink) 50%, transparent);
+  pointer-events: auto;
+}
+
+#skytterheks-room .cy-window.is-maximized {
+  left: 12px !important;
+  top: 54px !important;
+  width: calc(100% - 24px) !important;
+  min-width: 0;
+}
+
+#skytterheks-room .cy-window.is-active {
+  border-color: var(--cy-pink-dark);
+  box-shadow: 10px 10px 0 color-mix(in srgb, var(--cy-ink) 58%, transparent);
+}
+
+#skytterheks-room .cy-titlebar {
+  min-height: 32px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 8px;
+  background: linear-gradient(90deg, var(--cy-pink-dark), var(--cy-pink));
+  color: #fff;
+  border-bottom: 2px solid var(--cy-line);
+  cursor: move;
+  touch-action: none;
+  user-select: none;
+}
+
+#skytterheks-room .cy-titlebar strong {
+  margin-right: auto;
+  font-family: var(--fuente-retro);
+  font-weight: 500;
+}
+
+#skytterheks-room .cy-window-control {
+  width: 22px;
+  height: 20px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  background: var(--cy-soft);
+  border: 2px outset #fff;
+  color: var(--cy-ink);
+  cursor: pointer;
+}
+
+#skytterheks-room .cy-menubar {
+  display: flex;
+  gap: 18px;
+  padding: 4px 10px;
+  border-bottom: 1px solid #d9b9d5;
+  background: #fff;
+  color: #765b77;
+  font-family: var(--fuente-retro);
+}
+
+#skytterheks-room .cy-content {
+  min-height: 340px;
+  max-height: min(430px, 58vh);
+  padding: 16px;
+  overflow: auto;
+}
+
+#skytterheks-room .cy-status {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 6px 10px;
+  border-top: 2px groove #fff;
+  background: var(--cy-soft);
+  color: #755c75;
+  font-family: var(--fuente-retro);
+}
+
+#skytterheks-room .cy-taskbar {
+  position: absolute;
+  z-index: 6;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 8px;
+  background: var(--cy-pink);
+  border-top: 3px ridge #fff;
+  overflow: hidden;
+}
+
+#skytterheks-room .cy-task-list {
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  overflow-x: auto;
+  scrollbar-width: thin;
+}
+
+#skytterheks-room .cy-start,
+#skytterheks-room .cy-task {
+  min-height: 30px;
+  padding: 4px 9px;
+  border: 2px outset #fff;
+  background: var(--cy-soft);
+  color: var(--cy-ink);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+#skytterheks-room .cy-start {
+  font-weight: 500;
+}
+
+#skytterheks-room .cy-task {
+  max-width: 165px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#skytterheks-room .cy-task[aria-pressed="true"] {
+  border-style: inset;
+  background: #ecd0e9;
+}
+
+#skytterheks-room .cy-clock {
+  margin-left: auto;
+  min-width: 72px;
+  padding: 5px 8px;
+  border: 2px inset #fff;
+  text-align: center;
+  color: #6c4b6c;
+}
+
+#skytterheks-room .cy-welcome {
+  display: grid;
+  grid-template-columns: 1.08fr 0.92fr;
+  gap: 16px;
+}
+
+#skytterheks-room .cy-kicker {
+  margin: 0 0 6px;
+  color: var(--cy-pink-dark);
+  font-family: var(--fuente-retro);
+}
+
+#skytterheks-room .cy-content h2,
+#skytterheks-room .cy-content h3 {
+  font-weight: 500;
+}
+
+#skytterheks-room .cy-content h2 {
+  margin: 0 0 8px;
+}
+#skytterheks-room .cy-content h3 {
+  margin: 0 0 6px;
+}
+#skytterheks-room .cy-content p {
+  margin: 0 0 10px;
+}
+
+#skytterheks-room .cy-manifesto {
+  padding-left: 10px;
+  border-left: 4px solid var(--cy-pink-dark);
+  color: #674e6b;
+}
+
+#skytterheks-room .cy-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+#skytterheks-room .cy-action {
+  min-height: 38px;
+  padding: 7px 11px;
+  border: 2px outset #fff;
+  background: var(--cy-soft);
+  color: var(--cy-ink);
+  cursor: pointer;
+}
+
+#skytterheks-room .cy-action.primary {
+  background: var(--cy-pink-dark);
+  color: #fff;
+}
+
+#skytterheks-room .cy-placeholder {
+  position: relative;
+  min-height: 155px;
+  display: grid;
+  place-items: center;
+  padding: 12px;
+  border: 2px solid var(--cy-line);
+  background:
+    linear-gradient(
+      to top right,
+      transparent calc(50% - 1px),
+      var(--cy-line),
+      transparent calc(50% + 1px)
+    ),
+    linear-gradient(
+      to bottom right,
+      transparent calc(50% - 1px),
+      var(--cy-line),
+      transparent calc(50% + 1px)
+    ),
+    #f8eef7;
+  color: #755d75;
+  text-align: center;
+}
+
+#skytterheks-room .cy-placeholder span {
+  padding: 4px 7px;
+  background: var(--cy-paper);
+  border: 1px solid var(--cy-line);
+}
+
+#skytterheks-room .cy-project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+#skytterheks-room .cy-project {
+  min-width: 0;
+  padding: 9px;
+  border: 2px solid var(--cy-line);
+  background: #fff;
+}
+
+#skytterheks-room .cy-project .cy-placeholder {
+  min-height: 95px;
+}
+
+#skytterheks-room .cy-project-meta {
+  margin-top: 8px;
+  color: #755d75;
+}
+
+#skytterheks-room .cy-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 8px;
+}
+
+#skytterheks-room .cy-tag {
+  padding: 2px 6px;
+  border: 1px solid var(--cy-line);
+  background: var(--cy-soft);
+  font-family: var(--fuente-retro);
+}
+
+#skytterheks-room .cy-case {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 14px;
+}
+
+#skytterheks-room .cy-case-list {
+  display: grid;
+  gap: 8px;
+}
+
+#skytterheks-room .cy-case-row {
+  display: grid;
+  grid-template-columns: 105px 1fr;
+  gap: 8px;
+  padding-bottom: 7px;
+  border-bottom: 1px dotted var(--cy-line);
+}
+
+#skytterheks-room .cy-case-row strong {
+  color: var(--cy-pink-dark);
+}
+
+#skytterheks-room .cy-skill-groups {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+#skytterheks-room .cy-skill-group {
+  padding: 11px;
+  border: 2px dashed var(--cy-line);
+  background: #fff;
+}
+
+#skytterheks-room .cy-skill-group ul {
+  margin: 8px 0 0;
+  padding-left: 18px;
+}
+
+#skytterheks-room .cy-about {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 14px;
+}
+
+#skytterheks-room .cy-about .cy-placeholder {
+  min-height: 210px;
+}
+
+#skytterheks-room .cy-cv {
+  display: grid;
+  grid-template-columns: minmax(210px, 0.72fr) 1.28fr;
+  gap: 16px;
+}
+
+#skytterheks-room .cy-paper-sheet {
+  min-height: 295px;
+  padding: 18px;
+  background: #fff;
+  border: 1px solid #bbaabb;
+  box-shadow: 4px 4px 0 #e3d4e2;
+}
+
+#skytterheks-room .cy-cv-list {
+  display: grid;
+  gap: 9px;
+}
+
+#skytterheks-room .cy-cv-row {
+  padding: 8px;
+  border-left: 4px solid var(--cy-pink);
+  background: var(--cy-soft);
+}
+
+#skytterheks-room .cy-contact {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 14px;
+}
+
+#skytterheks-room .cy-form {
+  display: grid;
+  gap: 8px;
+}
+
+#skytterheks-room .cy-form label {
+  display: grid;
+  gap: 4px;
+  color: #634e65;
+}
+
+#skytterheks-room .cy-form input,
+#skytterheks-room .cy-form textarea {
+  width: 100%;
+  padding: 7px;
+  border: 2px inset #fff;
+  background: #fff;
+  color: var(--cy-ink);
+}
+
+#skytterheks-room .cy-form textarea {
+  min-height: 88px;
+  resize: vertical;
+}
+
+#skytterheks-room .cy-function {
+  margin-top: 12px;
+  padding: 8px 10px;
+  background: #fff6c7;
+  border: 1px solid #a88d49;
+  color: #634f19;
+  font-family: var(--fuente-retro);
+}
+
+@media (max-width: 820px) {
+  #skytterheks-room .cy-browserbar {
+    grid-template-columns: auto 1fr;
+  }
+  #skytterheks-room .cy-browserbar > :last-child {
+    display: none;
+  }
+  #skytterheks-room .cy-desktop {
+    min-height: 830px;
+    padding: 12px 12px 58px;
+  }
+  #skytterheks-room .cy-brand {
+    max-width: 100%;
+  }
+  #skytterheks-room .cy-icons {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    width: 100%;
+    gap: 6px;
+    margin: 12px 0;
+  }
+  #skytterheks-room .cy-icon {
+    min-height: 104px;
+  }
+  #skytterheks-room .cy-window {
+    left: 12px !important;
+    right: 12px;
+    top: 310px !important;
+    width: auto !important;
+    min-width: 0;
+    min-height: 0;
+    box-shadow: 5px 5px 0 color-mix(in srgb, var(--cy-ink) 45%, transparent);
+  }
+  #skytterheks-room .cy-window.is-maximized {
+    top: 12px !important;
+  }
+  #skytterheks-room .cy-content {
+    min-height: 0;
+    max-height: 375px;
+  }
+  #skytterheks-room .cy-welcome,
+  #skytterheks-room .cy-project-grid,
+  #skytterheks-room .cy-case,
+  #skytterheks-room .cy-skill-groups,
+  #skytterheks-room .cy-about,
+  #skytterheks-room .cy-cv,
+  #skytterheks-room .cy-contact {
+    grid-template-columns: 1fr;
+  }
+  #skytterheks-room .cy-about .cy-placeholder {
+    min-height: 150px;
+  }
+  #skytterheks-room .cy-start {
+    max-width: 118px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  #skytterheks-room .cy-task {
+    max-width: 125px;
+  }
+  #skytterheks-room .cy-clock {
+    display: none;
+  }
+}
+
+@media (max-width: 410px) {
+  #skytterheks-room .cy-icons {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  #skytterheks-room .cy-desktop {
+    min-height: 960px;
+  }
+  #skytterheks-room .cy-window {
+    top: 420px !important;
+  }
+  #skytterheks-room .cy-window.is-maximized {
+    top: 12px !important;
+  }
+  #skytterheks-room .cy-brand strong {
+    letter-spacing: 0.08em;
+  }
+  #skytterheks-room .cy-status {
+    flex-direction: column;
+  }
+  #skytterheks-room .cy-case-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ASPECTO DE LAS VENTANAS: biseles, barras y detalles retro. */
+
+#skytterheks-room .cy-desktop {
+  height: calc(100dvh - 44px);
+  min-height: 720px;
+  background: var(--cy-blue) var(--wallpaper) center / var(--ajuste-fondo) fixed;
+}
+#skytterheks-room .cy-desktop::before,
+#skytterheks-room .cy-desktop::after {
+  display: none;
+}
+#skytterheks-room .cy-browserbar {
+  background: #f2e1fa;
+  min-height: 44px;
+  font-size: 12px;
+}
+#skytterheks-room .cy-brand {
+  background: #fffaf5ed;
+  border: 3px ridge #ffe9ff;
+}
+#skytterheks-room .cy-window {
+  border: 3px outset #f5d8ff;
+  box-shadow: 6px 7px 0 #25133966;
+  background: var(--cy-paper);
+  min-height: 0;
+}
+#skytterheks-room .cy-window.is-active {
+  border-color: #eccaf9;
+  box-shadow: 8px 9px 0 #25133988;
+}
+#skytterheks-room .cy-titlebar {
+  background: linear-gradient(
+    90deg,
+    var(--barra-inicio),
+    var(--barra-centro),
+    var(--barra-fin)
+  );
+  color: #59335e;
+  border-bottom: 1px solid #cfb2dc;
+}
+#skytterheks-room .cy-titlebar strong {
+  font-weight: bold;
+  font-size: 14px;
+}
+#skytterheks-room .cy-content {
+  max-height: calc(100dvh - 290px);
+  min-height: 260px;
+  line-height: 1.65;
+}
+#skytterheks-room .cy-window.is-maximized {
+  top: 8px !important;
+  height: calc(100% - 70px);
+  display: flex;
+  flex-direction: column;
+}
+#skytterheks-room .cy-window.is-maximized[hidden] {
+  display: none;
+}
+#skytterheks-room .cy-window.is-maximized .cy-content {
+  flex: 1;
+  max-height: none;
+  min-height: 0;
+}
+#skytterheks-room .cy-menubar {
+  background: var(--cy-soft);
+  gap: 10px;
+}
+#skytterheks-room .cy-menubar button {
+  border: 0;
+  background: none;
+  color: #65436d;
+  cursor: pointer;
+  padding: 4px;
+}
+#skytterheks-room .cy-taskbar {
+  background: var(--cy-pink);
+}
+#skytterheks-room .cy-icon-glyph {
+  background-image: var(--sprites) !important;
+  background-color: transparent !important;
+  background-position: -616px -157px !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  width: 32px;
+  height: 32px;
+  min-height: 32px;
+  font-size: 0;
+  transform: scale(1.4);
+  margin: 8px auto 16px;
+  image-rendering: auto;
+}
+#skytterheks-room [data-panel="portfolio"] .cy-icon-glyph {
+  background-position: -616px -257px !important;
+}
+#skytterheks-room [data-panel="projects"] .cy-icon-glyph {
+  background-position: -616px -223px !important;
+}
+#skytterheks-room [data-panel="skills"] .cy-icon-glyph {
+  background-position: -616px -190px !important;
+}
+#skytterheks-room [data-panel="contact"] .cy-icon-glyph {
+  background-position: -616px -287px !important;
+}
+#skytterheks-room .cy-icon-label {
+  text-shadow: 1px 2px 3px #102f5c;
+  color: white;
+}
+#skytterheks-room .cy-extras {
+  position: relative;
+  z-index: 3;
+  display: grid;
+  width: 180px;
+  gap: 8px;
+  margin-top: 14px;
+}
+#skytterheks-room .cy-about > .cy-placeholder {
+  border: 12px ridge #ba974d;
+  box-shadow: inset 0 0 0 4px #f3d785;
+  background-color: #fff6df;
+}
+#skytterheks-room a {
+  color: var(--color-enlaces);
+}
+#skytterheks-room .cy-placeholder {
+  background-color: #f8edf9;
+}
+#skytterheks-room .cy-function[hidden] {
+  display: none;
+}
+#skytterheks-room :focus-visible {
+  outline: 3px solid #186c83;
+  outline-offset: 3px;
+}
+body {
+  cursor: var(--cursor), auto;
+}
+.sk-bubble {
+  position: fixed;
+  z-index: 9999;
+  pointer-events: none;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #dfaaff;
+  border-radius: 50%;
+  box-shadow: inset 3px 2px 3px #fff;
+  background: #f8ceff55;
+  animation: bubble-rise 1.4s ease-out forwards;
+}
+@keyframes bubble-rise {
+  to {
+    transform: translate(18px, -95px) scale(1.8);
+    opacity: 0;
+  }
+}
+::-webkit-scrollbar {
+  width: 15px;
+  height: 12px;
+}
+::-webkit-scrollbar-track {
+  background: #f2dfff;
+}
+::-webkit-scrollbar-thumb {
+  background: #fff6ff;
+  border: 3px outset #e2c4f3;
+}
+@media (max-width: 820px) {
+  #skytterheks-room .cy-desktop {
+    height: auto;
+    min-height: 1050px;
+    background-attachment: scroll;
+  }
+  #skytterheks-room .cy-extras {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #skytterheks-room .cy-window {
+    top: 480px !important;
+  }
+  #skytterheks-room .cy-content {
+    max-height: 390px;
+  }
+  #skytterheks-room .cy-window.is-maximized {
+    position: fixed;
+    top: 8px !important;
+    bottom: 64px;
+    height: auto;
+  }
+  #skytterheks-room .cy-taskbar {
+    position: fixed;
+    z-index: 20;
+  }
+  #skytterheks-room .cy-brand {
+    font-size: 12px;
+  }
+}
+@media (max-width: 410px) {
+  #skytterheks-room .cy-window {
+    top: 565px !important;
+  }
+  #skytterheks-room .cy-desktop {
+    min-height: 1160px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .sk-bubble {
+    display: none;
+  }
+}
+
+/* IMAGENES DE OBRA: no deformar ni recortar. */
+#skytterheks-room .cy-artwork {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+#skytterheks-room [hidden] {
+  display: none !important;
+}
+
+</style>
+<!-- MOTOR DE VENTANAS: no necesitas cambiarlo para editar tu contenido. -->
+<script>
+/* MOTOR DE VENTANAS
+   Los textos están en index.html y los colores en estilos.css.
+   Este archivo controla abrir, cerrar, minimizar, arrastrar,
+   la barra de tareas, las burbujas y preparar el correo.
+   No necesita librerías externas, instalación ni compilación.
+*/
+
+(() => {
+  const root = document.getElementById("skytterheks-room");
+  const desktop = root.querySelector(".cy-desktop");
+  const windowLayer = root.querySelector("#cy-window-layer");
+  const taskList = root.querySelector("#cy-task-list");
+
+  // El contenido se lee del HTML: no edites textos en este archivo.
+  const panels = Object.fromEntries(
+    [...document.querySelectorAll('template[id^="panel-"]')].map((t) => [
+      t.id.slice(6),
+      {
+        title: t.dataset.title,
+        task: t.dataset.task,
+        status: t.dataset.status,
+        html: t.innerHTML,
+      },
+    ]),
+  );
+  const datos = document.getElementById("datos-sitio").dataset;
+  const email = datos.email;
+  const domain = datos.domain;
+  root.querySelector(".cy-address").textContent = "https://" + domain;
+  document.querySelector('link[rel="canonical"]').href =
+    "https://" + domain + "/";
+  function updateContactLabels(box) {
+
+// Muestra el cuadro de ayuda mientras una foto no tenga archivo.
+box.querySelectorAll('img[data-foto]').forEach(img=>{
+ const fallback=img.nextElementSibling;
+ const show=(ok)=>{img.hidden=!ok;fallback.hidden=ok;};
+ if(!img.getAttribute('src')){show(false);return;}
+ img.addEventListener('load',()=>show(true));
+ img.addEventListener('error',()=>show(false));
+ show(img.complete&&img.naturalWidth>0);
+});
+
+    box.querySelectorAll("[data-email-link]").forEach((a) => {
+      a.textContent = email;
+      a.href = "mailto:" + email;
+    });
+    box
+      .querySelectorAll("[data-domain-label]")
+      .forEach((el) => (el.textContent = domain));
+  }
+  /* ==================== INTERACCIONES ====================
+       Esta parte convierte el sitio en un escritorio con ventanas reales.
+       No necesitas modificarla para cambiar textos, imágenes o colores. */
+
+  const design = { initialWindow: "welcome", showFunctionNotes: false };
+  const openWindows = new Map();
+  let highestZ = 10;
+  let cascadeIndex = 0;
+
+  function updateIconStates() {
+    root.querySelectorAll(".cy-icon[data-panel]").forEach((icon) => {
+      icon.setAttribute(
+        "aria-pressed",
+        String(openWindows.has(icon.dataset.panel)),
+      );
+    });
+  }
+
+  function updateFunctionNotes(windowBox) {
+    windowBox.querySelectorAll(".cy-function").forEach((note) => {
+      note.hidden = !design.showFunctionNotes;
+    });
+  }
+
+  function focusWindow(name) {
+    const state = openWindows.get(name);
+    if (!state) return;
+
+    state.minimized = false;
+    state.window.hidden = false;
+    state.window.style.zIndex = String(++highestZ);
+
+    openWindows.forEach((item) => {
+      const isActive = item === state;
+      item.window.classList.toggle("is-active", isActive);
+      item.task.setAttribute("aria-pressed", String(isActive));
+    });
+  }
+
+  function focusHighestVisibleWindow() {
+    const visible = [...openWindows.entries()]
+      .filter(([, state]) => !state.minimized)
+      .sort(
+        (a, b) =>
+          Number(b[1].window.style.zIndex) - Number(a[1].window.style.zIndex),
+      );
+
+    if (visible.length) focusWindow(visible[0][0]);
+  }
+
+  function minimizeWindow(name) {
+    const state = openWindows.get(name);
+    if (!state) return;
+
+    state.minimized = true;
+    state.window.hidden = true;
+    state.window.classList.remove("is-active");
+    state.task.setAttribute("aria-pressed", "false");
+    focusHighestVisibleWindow();
+  }
+
+  function closeWindow(name) {
+    const state = openWindows.get(name);
+    if (!state) return;
+
+    state.window.remove();
+    state.task.remove();
+    openWindows.delete(name);
+    updateIconStates();
+    focusHighestVisibleWindow();
+  }
+
+  function toggleMaximize(name) {
+    const state = openWindows.get(name);
+    if (!state) return;
+
+    state.window.classList.toggle("is-maximized");
+    focusWindow(name);
+  }
+
+  function makeDraggable(windowBox, name) {
+    const titlebar = windowBox.querySelector(".cy-titlebar");
+    let dragging = false;
+    let pointerId = null;
+    let startX = 0;
+    let startY = 0;
+    let startLeft = 0;
+    let startTop = 0;
+
+    titlebar.addEventListener("pointerdown", (event) => {
+      if (event.target.closest(".cy-window-control")) return;
+      if (windowBox.classList.contains("is-maximized")) return;
+      if (window.matchMedia("(max-width: 820px)").matches) return;
+      if (event.button !== undefined && event.button !== 0) return;
+
+      focusWindow(name);
+      dragging = true;
+      pointerId = event.pointerId;
+      startX = event.clientX;
+      startY = event.clientY;
+      startLeft = windowBox.offsetLeft;
+      startTop = windowBox.offsetTop;
+      titlebar.setPointerCapture(pointerId);
+    });
+
+    titlebar.addEventListener("pointermove", (event) => {
+      if (!dragging || event.pointerId !== pointerId) return;
+
+      const maxLeft = Math.max(
+        8,
+        desktop.clientWidth - windowBox.offsetWidth - 8,
+      );
+      const maxTop = Math.max(
+        8,
+        desktop.clientHeight - windowBox.offsetHeight - 65,
+      );
+      const nextLeft = Math.min(
+        maxLeft,
+        Math.max(8, startLeft + event.clientX - startX),
+      );
+      const nextTop = Math.min(
+        maxTop,
+        Math.max(8, startTop + event.clientY - startY),
+      );
+
+      windowBox.style.left = `${nextLeft}px`;
+      windowBox.style.top = `${nextTop}px`;
+    });
+
+    const stopDragging = (event) => {
+      if (!dragging || event.pointerId !== pointerId) return;
+      dragging = false;
+      if (titlebar.hasPointerCapture(pointerId))
+        titlebar.releasePointerCapture(pointerId);
+      pointerId = null;
+    };
+
+    titlebar.addEventListener("pointerup", stopDragging);
+    titlebar.addEventListener("pointercancel", stopDragging);
+    titlebar.addEventListener("dblclick", (event) => {
+      if (!event.target.closest(".cy-window-control")) toggleMaximize(name);
+    });
+  }
+
+  function createWindow(name) {
+    const panel = panels[name];
+    if (!panel) return null;
+
+    const windowBox = document.createElement("section");
+    const offset = (cascadeIndex++ % 5) * 20;
+    const left = Math.min(230 + offset, Math.max(8, desktop.clientWidth - 544));
+    const top = 76 + offset;
+
+    windowBox.className = "cy-window";
+    windowBox.dataset.window = name;
+    windowBox.tabIndex = -1;
+    windowBox.setAttribute("aria-label", `Ventana ${panel.title}`);
+    windowBox.style.left = `${left}px`;
+    windowBox.style.top = `${top}px`;
+
+    if (!window.matchMedia("(max-width: 820px)").matches) {
+      const availableWidth = Math.max(520, desktop.clientWidth - left - 24);
+      windowBox.style.width = `${Math.min(920, availableWidth)}px`;
+    }
+
+    windowBox.innerHTML = `
+        <div class="cy-titlebar">
+          <span aria-hidden="true">✿</span>
+          <strong>${panel.title}</strong>
+          <button class="cy-window-control" type="button" data-window-action="minimize" aria-label="Minimizar ventana">_</button>
+          <button class="cy-window-control" type="button" data-window-action="maximize" aria-label="Maximizar o restaurar ventana">□</button>
+          <button class="cy-window-control" type="button" data-window-action="close" aria-label="Cerrar ventana">×</button>
+        </div>
+        <div class="cy-menubar"><button data-panel="welcome">Inicio</button><button data-panel="portfolio">Galería</button><button data-panel="about">WBU</button><button data-panel="contact">Contacto</button></div>
+        <div class="cy-content">${panel.html}</div>
+        <div class="cy-status"><span>${panel.status}</span><span data-domain-label></span></div>`;
+
+    const task = document.createElement("button");
+    task.className = "cy-task";
+    task.type = "button";
+    task.dataset.windowTask = name;
+    task.setAttribute("aria-pressed", "false");
+    task.title = panel.title;
+    task.textContent = panel.task || panel.title;
+
+    windowLayer.append(windowBox);
+    taskList.append(task);
+    openWindows.set(name, { window: windowBox, task, minimized: false });
+    makeDraggable(windowBox, name);
+    updateFunctionNotes(windowBox);
+    updateContactLabels(windowBox);
+    updateIconStates();
+
+    return windowBox;
+  }
+
+  function openPanel(name) {
+    if (!panels[name]) return;
+    if (!openWindows.has(name)) createWindow(name);
+    focusWindow(name);
+    openWindows.get(name).window.focus({ preventScroll: true });
+  }
+
+  root.addEventListener("pointerdown", (event) => {
+    const windowBox = event.target.closest(".cy-window");
+    if (windowBox) focusWindow(windowBox.dataset.window);
+  });
+
+  root.addEventListener("click", (event) => {
+    const taskTrigger = event.target.closest("[data-window-task]");
+    if (taskTrigger) {
+      const name = taskTrigger.dataset.windowTask;
+      const state = openWindows.get(name);
+      if (!state) return;
+      if (
+        !state.minimized &&
+        taskTrigger.getAttribute("aria-pressed") === "true"
+      )
+        minimizeWindow(name);
+      else focusWindow(name);
+      return;
+    }
+
+    const windowAction = event.target.closest("[data-window-action]");
+    if (windowAction) {
+      const windowBox = windowAction.closest(".cy-window");
+      if (!windowBox) return;
+      const name = windowBox.dataset.window;
+      if (windowAction.dataset.windowAction === "minimize")
+        minimizeWindow(name);
+      if (windowAction.dataset.windowAction === "maximize")
+        toggleMaximize(name);
+      if (windowAction.dataset.windowAction === "close") closeWindow(name);
+      return;
+    }
+
+    const panelTrigger = event.target.closest("[data-panel]");
+    if (panelTrigger) openPanel(panelTrigger.dataset.panel);
+  });
+
+  function renderDesign() {
+    openWindows.forEach((state) => updateFunctionNotes(state.window));
+    if (!openWindows.size) openPanel(design.initialWindow);
+  }
+
+  // CONTACTO: prepara un correo; no requiere servidor ni plataforma.
+  root.addEventListener("submit", (e) => {
+    if (!e.target.matches("[data-contact-form]")) return;
+    e.preventDefault();
+    const d = new FormData(e.target);
+    const body = `Nombre: ${d.get("nombre")}\nCorreo: ${d.get("correo")}\n\n${d.get("mensaje")}`;
+    location.href =
+      "mailto:" +
+      email +
+      "?subject=" +
+      encodeURIComponent(d.get("motivo")) +
+      "&body=" +
+      encodeURIComponent(body);
+  });
+  root.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      const active = [...openWindows.entries()].find(([, v]) =>
+        v.window.classList.contains("is-active"),
+      );
+      if (active) {
+        minimizeWindow(active[0]);
+        active[1].task.focus();
+      }
+    }
+  });
+  const clock = () =>
+    (root.querySelector(".cy-clock").textContent =
+      new Date().toLocaleTimeString("es-MX", {
+        hour: "2-digit",
+        minute: "2-digit",
+      }));
+  clock();
+  setInterval(clock, 30000);
+  const motion = matchMedia("(prefers-reduced-motion: reduce)");
+  let effects = !motion.matches,
+    lastBubble = 0;
+  const effectButton = document.getElementById("effects");
+  function effectLabel() {
+    effectButton.textContent = "Burbujas: " + (effects ? "sí" : "no");
+    effectButton.setAttribute("aria-pressed", String(effects));
+  }
+  effectLabel();
+  effectButton.onclick = () => {
+    effects = !effects;
+    effectLabel();
+  };
+  motion.addEventListener("change", () => {
+    effects = !motion.matches;
+    effectLabel();
+  });
+  document.addEventListener("pointermove", (e) => {
+    if (
+      !effects ||
+      e.pointerType === "touch" ||
+      performance.now() - lastBubble < 90
+    )
+      return;
+    lastBubble = performance.now();
+    const b = document.createElement("i");
+    b.className = "sk-bubble";
+    b.style.left = e.clientX + "px";
+    b.style.top = e.clientY + "px";
+    document.body.append(b);
+    setTimeout(() => b.remove(), 1400);
+  });
+  window.addEventListener("resize", () => {
+    if (innerWidth <= 820) return;
+    openWindows.forEach(({ window: w }) => {
+      w.style.width = Math.min(920, desktop.clientWidth - 250) + "px";
+      w.style.left =
+        Math.max(
+          8,
+          Math.min(w.offsetLeft, desktop.clientWidth - w.offsetWidth - 8),
+        ) + "px";
+      w.style.top =
+        Math.max(
+          8,
+          Math.min(w.offsetTop, desktop.clientHeight - w.offsetHeight - 65),
+        ) + "px";
+    });
+  });
+
+  renderDesign();
+})();
+
+</script>
+</body>
+</html>
