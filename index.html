@@ -171,7 +171,7 @@ Conserva los id, data-panel y etiquetas template: conectan las ventanas.
             <button class="cy-action" data-panel="shop">♡ Werk.shop</button
             ><button class="cy-action" data-panel="explorer">✧ Folge mir!</button
             ><button class="cy-action" id="effects" aria-pressed="true">
-              Bubbles: Ja
+              Burbujas: Ja
             </button>
           </nav>
           <!-- MOTOR DE VENTANAS: el contenido aparece aquí al abrir un icono. -->
@@ -1925,7 +1925,7 @@ box.querySelectorAll('img[data-foto]').forEach(img=>{
     lastBubble = 0;
   const effectButton = document.getElementById("effects");
   function effectLabel() {
-    effectButton.textContent =  "Bubbles: " + (effects ? "Ja" : "Nein");
+    effectButton.textContent =  "Burbujas: " + (effects ? "Ja" : "Nein");
     effectButton.setAttribute("aria-pressed", String(effects));
   }
   effectLabel();
